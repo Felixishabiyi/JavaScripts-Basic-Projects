@@ -1,0 +1,21 @@
+body {
+    background-color: bisque;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+}
+
+.wrapper {
+    display:grid;
+    grid-template-columns: 100%;
+    margin-left: 500px;
+    margin-top: 150px;
+}
+
+.btn {
+    background-color: brown;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+}

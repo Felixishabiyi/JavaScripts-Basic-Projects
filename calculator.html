@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form class="calc" action="">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th colspan="7"><input type="text" id="display" name="display"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input id="clear" type="button" value="AC"></td>
+                        <td><input id="power" type="button" value="X2" onclick="double()"></td>
+                        <td><input class="btn" type="button" value="%" onclick = "percent()"></td>
+                        <td><input class="btn" type="button" value="/" onclick="disValue('/')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="7" onclick="disValue('7')"></td>
+                        <td><input class="btn" type="button" value="8" onclick="disValue('8')"></td>
+                        <td><input class="btn" type="button" value="9" onclick="disValue('9')"></td>
+                        <td><input class="btn" type="button" value="X" onclick="disValue('*')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="4" onclick="disValue('4')"></td>
+                        <td><input class="btn" type="button" value="5" onclick="disValue('5')"></td>
+                        <td><input class="btn" type="button" value="6" onclick="disValue('6')"></td>
+                        <td><input class="btn" type="button" value="-" onclick="disValue('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="1" onclick="disValue('1')"></td>
+                        <td><input class="btn" type="button" value="2" onclick="disValue('2')"></td>
+                        <td><input class="btn" type="button" value="3" onclick="disValue('3')"></td>
+                        <td><input class="btn" type="button" value="+" onclick="disValue('+')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="0" onclick="disValue('0')"></td>
+                        <td><input class="btn" type="button" value="." onclick="disValue('.')"></td>
+                        <td><input class="btn" type="button" value="+/-" onclick="disValue('-')"></td>
+                        <td><input class="btn" type="button" value="=" onclick="calc()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
